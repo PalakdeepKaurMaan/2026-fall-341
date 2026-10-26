@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="credit-approval" name="Page-1">
+    <mxGraphModel dx="1074" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="42" width="42" x="45" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="order" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;strokeWidth=1.5;fillColor=none;fontSize=13;" value="Take the customer order" vertex="1">
+          <mxGeometry height="62" width="150" x="135" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="credit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;strokeWidth=1.5;fillColor=none;fontSize=13;" value="Run the credit check" vertex="1">
+          <mxGeometry height="62" width="150" x="335" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1.5;fillColor=none;fontSize=12;" value="Credit approved?" vertex="1">
+          <mxGeometry height="92" width="105" x="535" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ship" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;strokeWidth=1.5;fillColor=none;fontSize=13;" value="Ship the goods" vertex="1">
+          <mxGeometry height="62" width="125" x="700" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="record" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;strokeWidth=1.5;fillColor=none;fontSize=13;" value="Record the order" vertex="1">
+          <mxGeometry height="62" width="125" x="865" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="endApproved" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=4;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="42" width="42" x="1030" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="reject" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;strokeWidth=1.5;fillColor=none;fontSize=13;" value="Reject the order" vertex="1">
+          <mxGeometry height="62" width="125" x="525" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="endRejected" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=4;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="42" width="42" x="720" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="order" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="credit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="credit" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="gateway" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=12;labelBackgroundColor=#FFFFFF;" target="ship" value="approved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="ship" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="record">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="record" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="endApproved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="gateway" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;fontSize=12;labelBackgroundColor=#FFFFFF;" target="reject" value="rejected">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="reject" style="endArrow=block;endFill=1;html=1;rounded=0;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="endRejected">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
